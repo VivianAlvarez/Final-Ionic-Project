@@ -11,7 +11,8 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },  {
+  },
+  {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
@@ -19,7 +20,26 @@ const routes: Routes = [
     path: 'signup',
     loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
   },
-
+  {
+    path: 'home1',
+    loadChildren: () => import('./home1/home1.module').then( m => m.Home1PageModule)
+  },
+  {
+    path: 'hotels',
+    loadChildren: () => import('./hotels/hotels.module').then( m => m.HotelsPageModule)
+  },
+  {
+    path: 'yellowbell',
+    loadChildren: () => import('./yellowbell/yellowbell.module').then( m => m.YellowbellPageModule)
+  },
+  {
+    path: 'sdr',
+    loadChildren: () => import('./sdr/sdr.module').then( m => m.SdrPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
 
 ];
 
