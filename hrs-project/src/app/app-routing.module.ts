@@ -63,6 +63,50 @@ const routes: Routes = [
     path: 'npv',
     loadChildren: () => import('./npv/npv.module').then( m => m.NpvPageModule)
   },
+  {
+    path: 'camp',
+    loadChildren: () => import('./camp/camp.module').then( m => m.CampPageModule)
+  },
+  {
+    path: 'dtr',
+    loadChildren: () => import('./dtr/dtr.module').then( m => m.DtrPageModule)
+  },
+  {
+    path: 'villa',
+    loadChildren: () => import('./villa/villa.module').then( m => m.VillaPageModule)
+  },
+  {
+    path: 'taal',
+    loadChildren: () => import('./taal/taal.module').then( m => m.TaalPageModule)
+  },
+  {
+    path: 'dqr',
+    loadChildren: () => import('./dqr/dqr.module').then( m => m.DqrPageModule)
+  },
+  {
+    path: 'ds',
+    loadChildren: () => import('./ds/ds.module').then( m => m.DsPageModule)
+  },
+  {
+    path: 'qr',
+    loadChildren: () => import('./qr/qr.module').then( m => m.QrPageModule)
+  },
+  {
+    path: 'villas',
+    loadChildren: () => import('./villas/villas.module').then( m => m.VillasPageModule)
+  },
+  {
+    path: 'sr',
+    loadChildren: () => import('./sr/sr.module').then( m => m.SrPageModule)
+  },
+  {
+    path: 'dlx',
+    loadChildren: () => import('./dlx/dlx.module').then( m => m.DlxPageModule)
+  },
+  {
+    path: 'dr',
+    loadChildren: () => import('./dr/dr.module').then( m => m.DrPageModule)
+  },
 
 
 ];

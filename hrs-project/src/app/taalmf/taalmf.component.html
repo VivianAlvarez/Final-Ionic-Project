@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="hotels"></ion-back-button>
+      </ion-buttons>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <img src="assets/taal.png">
+  <h1>Taal Maranan's Farmville Inc by Cocotel</h1>
+
+    <ion-card class="ion3">
+    <ion-card class="ion1">
+      <img class="img1" src="assets/dqrr.jpg">
+      <ion-button color="dark" fill="solid" size="warning" routerLink="/dqr">₱2,798</ion-button>
+    
+      <p *ngFor="let t of taalhotel">
+    <ion-card-title class="ion2" *ngIf="t.rm === 1">Hotel Name: {{t.hname}} <br> Type: {{t.style}} <br>
+       Location:  {{t.loc}} </ion-card-title>
+    </p>
+  </ion-card>
+  </ion-card>
+
+  <ion-card class="ion3">
+    <ion-card class="ion1">
+      <img class="img1" src="assets/dss.jpg">
+      <ion-button color="dark" fill="solid" size="warning" routerLink="/ds">₱3,902</ion-button>
+    
+      <p *ngFor="let t of taalhotel">
+    <ion-card-title class="ion2" *ngIf="t.rm === 2">Hotel Name: {{t.hname}} <br> Type: {{t.style}} <br>
+       Location:  {{t.loc}} </ion-card-title>
+    </p>
+  </ion-card>
+  </ion-card>
+  
+  <ion-card class="ion3">
+    <ion-card class="ion1">
+      <img class="img1" src="assets/qrr.jpg">
+      <ion-button color="dark" fill="solid" size="warning" routerLink="/qr">₱4,859</ion-button>
+    
+      <p *ngFor="let t of taalhotel">
+    <ion-card-title class="ion2" *ngIf="t.rm === 3">Hotel Name: {{t.hname}} <br> Type: {{t.style}} <br>
+       Location: {{t.loc}} </ion-card-title>
+    </p>
+  </ion-card>
+  </ion-card>
+
+    <ion-footer>
+      <ion-toolbar></ion-toolbar>
+    </ion-footer>
+  
+  </ion-content>
