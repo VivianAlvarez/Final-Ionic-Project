@@ -47,6 +47,22 @@ const routes: Routes = [
     path: 'ddr',
     loadChildren: () => import('./ddr/ddr.module').then( m => m.DdrPageModule)
   },
+  {
+    path: 'snbnt',
+    loadChildren: () => import('./snbnt/snbnt.module').then( m => m.SnbntPageModule)
+  },
+  {
+    path: 'ps',
+    loadChildren: () => import('./ps/ps.module').then( m => m.PsPageModule)
+  },
+  {
+    path: 'es',
+    loadChildren: () => import('./es/es.module').then( m => m.EsPageModule)
+  },
+  {
+    path: 'npv',
+    loadChildren: () => import('./npv/npv.module').then( m => m.NpvPageModule)
+  },
 
 
 ];
