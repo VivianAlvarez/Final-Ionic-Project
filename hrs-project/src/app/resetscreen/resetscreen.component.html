@@ -1,0 +1,24 @@
+<ion-content>
+<ion-card>
+  <p>Reset Password</p>
+  <div class="ion-padding">
+
+    <form class="ion-padding">
+
+        <div class="wrap-input">
+          <input class="input" type="password" name="password" placeholder="New Password">
+        </div>
+        <div class="wrap-input">
+          <input class="input" type="password" name="password" placeholder="Confirm Password">
+        </div>
+      <div class="flex-center">
+        <div class="container-form-btn">
+          <ion-button (click)="presentAlert()" routerLink="/login">Reset Password</ion-button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+</ion-card>
+</ion-content>

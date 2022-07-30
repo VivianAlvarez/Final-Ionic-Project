@@ -123,7 +123,15 @@ const routes: Routes = [
   {
     path: 'suite',
     loadChildren: () => import('./suite/suite.module').then( m => m.SuitePageModule)
+  },  {
+    path: 'forgotpw',
+    loadChildren: () => import('./forgotpw/forgotpw.module').then( m => m.ForgotpwPageModule)
   },
+  {
+    path: 'resetpw',
+    loadChildren: () => import('./resetpw/resetpw.module').then( m => m.ResetpwPageModule)
+  },
+
 
 
 ];

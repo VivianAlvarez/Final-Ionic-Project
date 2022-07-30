@@ -1,0 +1,57 @@
+ion-content{
+    --background: linear-gradient(to bottom, #ffcc99 37%, #ff9966 100%);
+}
+.flex-center{
+
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+
+}
+.wrap-input{
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.12);
+    margin-bottom: 26px;
+}
+
+.input{
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    line-height: 1.2;
+    border: none;
+    outline: none;
+    height: 46px;
+    padding: 0 20px 0 23px;
+}
+
+.form-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 160px;
+    height: 42px;
+    background-color: #5f251b;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-top: 5px;
+    transition: all 0.4s;
+    box-shadow: 0 10px 30px 0px rgba(96, 118, 134, 0.5);
+}
+ion-card{
+    
+    --background: #fce3d8;
+    justify-content: center;
+}
+p{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
