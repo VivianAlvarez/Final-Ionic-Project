@@ -1,11 +1,13 @@
 h1{
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Levelo';
     font-size: xx-large;
+    font-weight: bold;
+    color: #fdf7f7;
 }
 img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 160px;
 }
 .pic{
     width: 180px;
@@ -22,5 +24,8 @@ img{
     margin-left: 12.5ch;
 }
 ion-content{
-    --background:#f1cdbd;
+    --background: linear-gradient(to bottom, #ffcc99 37%, #ff9966 100%);
+}
+ion-card{
+    --background: #663232;
 }

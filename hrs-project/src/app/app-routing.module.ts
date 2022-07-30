@@ -131,6 +131,22 @@ const routes: Routes = [
     path: 'resetpw',
     loadChildren: () => import('./resetpw/resetpw.module').then( m => m.ResetpwPageModule)
   },
+  {
+    path: 'lipa',
+    loadChildren: () => import('./lipa/lipa.module').then( m => m.LipaPageModule)
+  },
+  {
+    path: 'st',
+    loadChildren: () => import('./st/st.module').then( m => m.StPageModule)
+  },
+  {
+    path: 'sk',
+    loadChildren: () => import('./sk/sk.module').then( m => m.SkPageModule)
+  },
+  {
+    path: 'bsd',
+    loadChildren: () => import('./bsd/bsd.module').then( m => m.BsdPageModule)
+  },
 
 
 
