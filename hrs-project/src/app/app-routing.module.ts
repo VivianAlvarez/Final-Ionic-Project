@@ -39,7 +39,8 @@ const routes: Routes = [
   {
     path: 'profile',
     loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
-  },  {
+  },
+  {
     path: 'tr',
     loadChildren: () => import('./tr/tr.module').then( m => m.TrPageModule)
   },
@@ -106,6 +107,22 @@ const routes: Routes = [
   {
     path: 'dr',
     loadChildren: () => import('./dr/dr.module').then( m => m.DrPageModule)
+  },
+  {
+    path: 'del',
+    loadChildren: () => import('./del/del.module').then( m => m.DelPageModule)
+  },
+  {
+    path: 'deluxe',
+    loadChildren: () => import('./deluxe/deluxe.module').then( m => m.DeluxePageModule)
+  },
+  {
+    path: 'fr',
+    loadChildren: () => import('./fr/fr.module').then( m => m.FrPageModule)
+  },
+  {
+    path: 'suite',
+    loadChildren: () => import('./suite/suite.module').then( m => m.SuitePageModule)
   },
 
 
