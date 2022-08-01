@@ -147,6 +147,22 @@ const routes: Routes = [
     path: 'bsd',
     loadChildren: () => import('./bsd/bsd.module').then( m => m.BsdPageModule)
   },
+  {
+    path: 'ponte',
+    loadChildren: () => import('./ponte/ponte.module').then( m => m.PontePageModule)
+  },
+  {
+    path: 'executive',
+    loadChildren: () => import('./executive/executive.module').then( m => m.ExecutivePageModule)
+  },
+  {
+    path: 'luxe',
+    loadChildren: () => import('./luxe/luxe.module').then( m => m.LuxePageModule)
+  },
+  {
+    path: 'gr',
+    loadChildren: () => import('./gr/gr.module').then( m => m.GrPageModule)
+  },
 
 
 

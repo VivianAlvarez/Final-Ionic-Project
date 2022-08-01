@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="hotels"></ion-back-button>
+      </ion-buttons>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <img src="assets/ponte.png">
+
+    <ion-card class="ion3">
+    <ion-card class="ion1">
+      <img class="img1" src="assets/ponteeee.jpg">
+      <ion-button color="dark" fill="solid" size="warning" routerLink="/gr">₱</ion-button>
+    
+      <p *ngFor="let p of pontehotel">
+    <ion-card-title class="ion2" *ngIf="p.rm === 1">Hotel Name: {{p.hname}} <br> Type: {{p.style}} <br>
+       Location:  {{p.loc}} </ion-card-title>
+    </p>
+  </ion-card>
+  </ion-card>
+
+  <ion-card class="ion3">
+    <ion-card class="ion1">
+      <img class="img1" src="assets/pontee.jpg">
+      <ion-button color="dark" fill="solid" size="warning" routerLink="/executive">₱3,902</ion-button>
+    
+      <p *ngFor="let p of pontehotel">
+    <ion-card-title class="ion2" *ngIf="p.rm === 2">Hotel Name: {{p.hname}} <br> Type: {{p.style}} <br>
+       Location:  {{p.loc}} </ion-card-title>
+    </p>
+  </ion-card>
+  </ion-card>
+  
+  <ion-card class="ion3">
+    <ion-card class="ion1">
+      <img class="img1" src="assets/ponteee.jpg">
+      <ion-button color="dark" fill="solid" size="warning" routerLink="/luxe">₱4,859</ion-button>
+    
+      <p *ngFor="let p of pontehotel">
+    <ion-card-title class="ion2" *ngIf="p.rm === 3">Hotel Name: {{p.hname}} <br> Type: {{p.style}} <br>
+       Location: {{p.loc}} </ion-card-title>
+    </p>
+  </ion-card>
+  </ion-card>
+
+    <ion-footer>
+      <ion-toolbar></ion-toolbar>
+    </ion-footer>
+  
+  </ion-content>
