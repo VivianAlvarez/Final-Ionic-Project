@@ -1,0 +1,37 @@
+
+
+<ion-content>
+  <ion-card>
+    <h2>Check-In</h2>
+    <ion-datetime presentation="date"></ion-datetime>
+  </ion-card>
+  <ion-card>
+    <h2>Check-Out</h2>
+    <ion-datetime presentation="date"></ion-datetime>
+  </ion-card>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="people"></ion-icon><p>Travellers</p><br>
+      <ion-select placeholder="Select quantity">
+        <ion-select-option value="1">1</ion-select-option>
+        <ion-select-option value="2">2</ion-select-option>
+        <ion-select-option value="3">3</ion-select-option>
+        <ion-select-option value="4">4</ion-select-option>
+      </ion-select>
+    </ion-item><br><br><br>
+
+    <ion-title>Price Details</ion-title>
+    <p>Total:</p>
+  </ion-list>
+  <ion-card class="ion3">
+    <h1>Pay with</h1>
+    <h3>Payment Method</h3>
+    <ion-select placeholder="Select">
+      <ion-select-option value="gcash">Gcash</ion-select-option>
+      <ion-select-option value="visa">Visa</ion-select-option>
+      <ion-select-option value="mastercard">Mastercard</ion-select-option>
+      <ion-select-option value="bancnet">Bancnet</ion-select-option>
+    </ion-select>
+  </ion-card>
+  <ion-button class="button2" color="dark" fill="solid" size="warning" (click)="presentAlert()" routerLink="/home1">BOOK</ion-button>
+</ion-content>

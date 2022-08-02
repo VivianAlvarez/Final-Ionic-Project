@@ -163,6 +163,14 @@ const routes: Routes = [
     path: 'gr',
     loadChildren: () => import('./gr/gr.module').then( m => m.GrPageModule)
   },
+  {
+    path: 'reserve',
+    loadChildren: () => import('./reserve/reserve.module').then( m => m.ReservePageModule)
+  },
+  {
+    path: 'personalinfo',
+    loadChildren: () => import('./personalinfo/personalinfo.module').then( m => m.PersonalinfoPageModule)
+  },
 
 
 
